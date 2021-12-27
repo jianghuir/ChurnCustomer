@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:crimson; font-size: 60px;">Predict Credit Card Customer Churning Probability</h1>
+
+<p style="font-size: 30px;">Input Customer Information:</p>
+
+<form method="POST" action="/">
+    <p>Customer Age                 <input type='number' name='Age'></p> 
+    <p>Dependent Count              <input type='number' name='Dependent#'></p>
+    <p>Months on Book               <input type='number' name='MonthsOnBook'></p>
+    <p>Total Relationship Count     <input type='number' name='TotalRelationship#'></p>
+    <p>Inactive Months              <input type='number' name='InactiveMonths'></p>
+    <p>Contacting Bank Count        <input type='number' name='Contact#'></p>
+    <p>Credit Limit                 <input type='number' step=0.01 name='CreditLimit'></p>
+    <p>Revolving Balance            <input type='number' step=0.01 name='RevolvBal'></p>
+    <p>Transaction Amount Change Q4/Q1  <input type='number' step=0.001 name='TransAmtQ4/Q1'></p>
+    <p>Total Transaction Amount     <input type='number' step=0.01 name='TotalTransAmt'></p>
+    <p>Total Transaction Count      <input type='number' name='TotalTransCt'></p>
+    <p>Transaction Count Change Q4/Q1   <input type='number' step=0.001 name='TransCtQ4/Q1'></p>
+    
+    <input type="submit" value='Submit'>
+    <br> <br>
+    {{ result }} 
+    <br> <br>
+    <a href="{{ url_for('static', filename= 'image.html') }}">Click Here for More Details</a>
+    
+    
+</form>
+
+    
+</body>
+
+</html>
