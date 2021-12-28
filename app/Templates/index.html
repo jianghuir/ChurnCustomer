@@ -22,10 +22,15 @@
     
     <input type="submit" value='Submit'>
     <br> <br>
-    {{ result }} 
+    <p style="font-size: 25px;">Churn prediction: {{ result1 }} </p>
+    <p style="font-size: 25px;">Churn probability: {{ result2 }} </p> 
     <br> <br>
-    <a href="{{ url_for('static', filename= 'image.html') }}">Click Here for More Details</a>
     
+    <iframe srcdoc="{{plot_cust}}" height="130" width="1500" title="Factors"} ></iframe>
+    <br>
+    <p style="font-size: 20px;"> {{ imageNote1 }} </p>
+    <p style="font-size: 20px;"> {{ imageNote2 }} </p>
+    <p style="font-size: 20px;"> {{ imageNote3 }} </p>
     
 </form>
 
